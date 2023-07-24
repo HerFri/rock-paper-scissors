@@ -1,0 +1,28 @@
+body {
+    background-color: beige;
+}
+
+.imagecontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.images {
+    margin: 150px;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.heading {
+    font-size: 100px;
+}
+
+.bold {
+    font-weight: bold;;
+}
+
+.announce {
+    font-size: 30px;
+}
