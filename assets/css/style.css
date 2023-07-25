@@ -15,6 +15,11 @@ body {
     margin-right: 20px;
 }
 
+.imagechoice {
+    width: 50%;
+    margin-left: 30%;
+}
+
 .textcenter {
     text-align: center;
 }
@@ -42,18 +47,18 @@ body {
 }
 
 .choice {
-    background-color: blue;
+    background-color: white;
     width: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.choice2 {
+/*.choice2 {
     background-color: blue;
     width: 33%;
     margin-left: auto;
-}
+} */
 
 .vs {
     width: 40%;
@@ -116,8 +121,12 @@ body {
         margin-right: 20px;
     }
 
-    .vs {
+    .imagechoice {
         width: 80%;
+    }
+
+    .vs {
+        width: 70%;
     }
     
     .fight {
@@ -128,7 +137,7 @@ body {
 @media only screen and (min-width: 992px) {
 
     .vs {
-        width: 60%;
+        width: 50%;
     }
 
     .images {
@@ -153,4 +162,16 @@ body {
     .announce {
         font-size: 50px;
     }
+}
+
+@media only screen and (min-width: 2000px) {
+
+    .images {
+        margin-right: 100px
+    }
+
+    .imagechoice {
+        width: 140%;
+    }
+
 }
