@@ -1,5 +1,7 @@
+/* Extra small devices (phones, 600px and down) */
+
 body {
-    background-color: beige;
+    background-color: b;
 }
 
 .imagecontainer {
@@ -8,7 +10,9 @@ body {
 }
 
 .images {
-    margin: 150px;
+    width: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .textcenter {
@@ -16,7 +20,7 @@ body {
 }
 
 .heading {
-    font-size: 100px;
+    font-size: 5vw;
 }
 
 .bold {
@@ -24,23 +28,22 @@ body {
 }
 
 .announce {
-    font-size: 30px;
+    font-size: 4vw;
 }
 
 .fight {
     background-color: white;
-    margin: 200px;
-    max-height: 600px;
-    margin-top: -80px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-top: 10px;
+    height: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
     border: 4px solid;
     display: flex; 
 }
 
 .choice {
     background-color: blue;
-    width: 33%
+    width: 33%;
 }
 
 .choice2 {
@@ -50,7 +53,7 @@ body {
 }
 
 .vs {
-    width: 50%;
+    width: 40%;
 }
 
 .imagebox {
@@ -62,9 +65,9 @@ body {
 
 .result {
     background-color: white;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: -80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
     border: 4px solid;
     display: flex;
     justify-content: center;
@@ -74,10 +77,11 @@ body {
 .score {
     background-color: white;
     border: 4px solid;
-    margin-top: 5%;
-    margin: 5%;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
     width: 50%;
-    height: 500px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -86,6 +90,52 @@ body {
 
 .flex {
     display: flex;
-    margin-left: 20%;
-    margin-right: 20%;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .images {
+        width: 20%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .vs {
+        width: 80%;
+    }
+    
+    .fight {
+        height: 200px;
+    }
+} 
+
+@media only screen and (min-width: 992px) {
+
+    .vs {
+        width: 60%;
+    }
+
+    .images {
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .vs {
+        width: 50%;
+    }
+
+    .fight {
+       height: 100%;
+       margin-top: 50px;
+    }
+
+    .images {
+        width: 10%;
+    }
+
+    .announce {
+        font-size: 50px;
+    }
 }
