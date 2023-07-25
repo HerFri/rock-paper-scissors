@@ -33,7 +33,7 @@ body {
 
 .fight {
     background-color: white;
-    margin-top: 10px;
+    margin-top: -10px;
     height: 100px;
     margin-left: 5%;
     margin-right: 5%;
@@ -90,6 +90,15 @@ body {
 
 .flex {
     display: flex;
+    justify-content: space-between;
+}
+
+#player {
+    margin-left: 15%;
+}
+
+#computer {
+    margin-right: 15%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -128,7 +137,6 @@ body {
 
     .fight {
        height: 100%;
-       margin-top: 50px;
     }
 
     .images {
