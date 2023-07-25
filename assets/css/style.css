@@ -44,6 +44,9 @@ body {
 .choice {
     background-color: blue;
     width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .choice2 {
@@ -100,6 +103,10 @@ body {
 #computer {
     margin-right: 15%;
 }
+
+#first, #second, #third {
+    display: none;
+  }
 
 @media only screen and (min-width: 768px) {
 
