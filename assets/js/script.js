@@ -45,6 +45,7 @@ function playGame() {
         pickNumber(); 
 }
 
+
 function pickNumber() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
             if (choiceNumber === 1) {
