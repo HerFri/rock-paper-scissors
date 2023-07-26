@@ -41,19 +41,20 @@ function generateNumber() {
     } */
 
 function playGame() {
-    document.getElementsByClassName("images").onclick = function() {
-        
+    document.getElementsByClassName("images").onclick =
+        pickNumber(); 
+}
 
-        let choiceNumber = Math.floor(Math.random() * 3) +1;
-            if (choiceNumber === 1){
+function pickNumber() {
+    let choiceNumber = Math.floor(Math.random() * 3) +1;
+            if (choiceNumber === 1) {
                 showRockComp();
             } else if (choiceNumber === 2){
                 showPaperComp();
             } else if (choiceNumber === 3){
                 showScissorsComp();
             }
-        console.log(choiceNumber)
-    }
+        console.log(choiceNumber);
 }
     
             
