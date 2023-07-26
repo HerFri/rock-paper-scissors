@@ -48,6 +48,11 @@ function playGame() {
 
 function pickNumber() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
+            /* not used */
+            const rockcomp = choiceNumber === 1;
+            const papercomp = choiceNumber === 2;
+            const scissorscomp = choiceNumber === 3;
+            /* not used */
             if (choiceNumber === 1) {
                 showRockComp();
             } else if (choiceNumber === 2){
@@ -56,9 +61,45 @@ function pickNumber() {
                 showScissorsComp();
             }
         console.log(choiceNumber);
+        if (rock.onclick && choiceNumber === 1) {
+            const tie = "it's a tie!";
+            document.getElementById("winner").innerText = tie;
+            console.log("It's a tie!");
+        } else if (rock.onclick && choiceNumber === 2) {
+            const loose = "You loose!";
+            document.getElementById("winner").innerText = loose;
+        } else if (rock.onclick && choiceNumber === 3) {
+            const win = "You win!";
+            document.getElementById("winner").innerText = win;
+        }
+        /* value of rock is at the beginning, that is why it gets false message for following: */
+        else if (paper.onclick && choiceNumber === 1) {
+            document.getElementById("winner").innerText = win;
+        } else if (paper.onclick && choiceNumber === 2) {
+            document.getElementById("winner").innerText = tie;
+        } else if (paper.onclick && choiceNumber === 3) {
+            document.getElementById("winner").innerText = loose;
+        } else if (scissors.onclick && choiceNumber === 1) {
+            document.getElementById("winner").innerText = loose;
+        } else if (scissors.onclick && choiceNumber === 2) {
+            document.getElementById("winner").innerText = win;
+        } else if (scissors.onclick && choiceNumber === 3) {
+            document.getElementById("winner").innerText = tie;
+        }
+
+    }
+
+/*
 }
-    
-            
+
+function winner() {
+
+
+    if (rock.onclick) {
+        console.log("Rock has been clicked")
+    }
+}
+           
             
             /*console.log(ComputerNumber) */
 
