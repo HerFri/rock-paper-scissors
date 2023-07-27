@@ -12,9 +12,9 @@
 
 }) */
 
-function generateNumber() {
+/* function generateNumber() {
     let genNbr = Math.floor(Math.random() * 3) +1;
-}
+} */
 
 /*function runGame() {
     let rockBtn = getElementById("rock");
@@ -40,54 +40,100 @@ function generateNumber() {
     )
     } */
 
-function playGame() {
-    document.getElementsByClassName("images").onclick =
-        pickNumber(); 
-}
+/* function playGame() {
+    document.getElementById("rock").addEventListener("click", function() {
+        pickNumber();
+    })
+    document.getElementById("paper").addEventListener("click", function() {
+        pickNumber();
+    })
+    document.getElementById("scissors").addEventListener("click", function() {
+        pickNumber();
+    })
+} */
+
+const draw = "It's a draw!";
+const loose = "You loose!";
+const win = "You win!";
 
 
-function pickNumber() {
+function pickNumberRock() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
             /* not used */
-            const rockcomp = choiceNumber === 1;
+        /*    const rockcomp = choiceNumber === 1;
             const papercomp = choiceNumber === 2;
-            const scissorscomp = choiceNumber === 3;
+            const scissorscomp = choiceNumber === 3; */
             /* not used */
             if (choiceNumber === 1) {
+                showRockComp();            
+                document.getElementById("winner").innerText = draw;
+                console.log("It's a tie!");
+            } else if (choiceNumber === 2){
+                showPaperComp();        
+                document.getElementById("winner").innerText = loose;
+            } else if (choiceNumber === 3){
+                showScissorsComp();             
+                document.getElementById("winner").innerText = win;
+            }
+        }
+function pickNumberPaper() {
+    let choiceNumber = Math.floor(Math.random() * 3) +1;
+            if (choiceNumber === 1) {
                 showRockComp();
+                document.getElementById("winner").innerText = win;
             } else if (choiceNumber === 2){
                 showPaperComp();
+                document.getElementById("winner").innerText = draw;
             } else if (choiceNumber === 3){
                 showScissorsComp();
+                document.getElementById("winner").innerText = loose;
             }
-        console.log(choiceNumber);
-        if (rock.onclick && choiceNumber === 1) {
-            const tie = "it's a tie!";
-            document.getElementById("winner").innerText = tie;
-            console.log("It's a tie!");
-        } else if (rock.onclick && choiceNumber === 2) {
-            const loose = "You loose!";
-            document.getElementById("winner").innerText = loose;
-        } else if (rock.onclick && choiceNumber === 3) {
-            const win = "You win!";
-            document.getElementById("winner").innerText = win;
-        }
-        /* value of rock is at the beginning, that is why it gets false message for following: */
-        else if (paper.onclick && choiceNumber === 1) {
-            document.getElementById("winner").innerText = win;
-        } else if (paper.onclick && choiceNumber === 2) {
-            document.getElementById("winner").innerText = tie;
-        } else if (paper.onclick && choiceNumber === 3) {
-            document.getElementById("winner").innerText = loose;
-        } else if (scissors.onclick && choiceNumber === 1) {
-            document.getElementById("winner").innerText = loose;
-        } else if (scissors.onclick && choiceNumber === 2) {
-            document.getElementById("winner").innerText = win;
-        } else if (scissors.onclick && choiceNumber === 3) {
-            document.getElementById("winner").innerText = tie;
         }
 
-    }
+function pickNumberScissors() {
+    let choiceNumber = Math.floor(Math.random() * 3) +1;
+            if (choiceNumber === 1) {
+                showRockComp();
+                document.getElementById("winner").innerText = loose;
+            } else if (choiceNumber === 2){
+                showPaperComp();
+                document.getElementById("winner").innerText = win;
+            } else if (choiceNumber === 3){
+                showScissorsComp();
+                document.getElementById("winner").innerText = draw;
+            }
+}
+     /*   console.log(choiceNumber);
+        if (rock.onclick && choiceNumber === 1) {
+            const tie = "it's a tie!";
+            
+        } else if (rock.onclick && choiceNumber === 2) {
+            
+        } else if (rock.onclick && choiceNumber === 3) {
+            
+        }
+        /* value of rock is at the beginning, that is why it gets false message for following: */
+       /* else if (paper.onclick && choiceNumber === 1) {
+            const win = "You win!";
+            document.getElementById("winner").innerText = win;
+        } else if (paper.onclick && choiceNumber === 2) {
+            const tie = "it's a tie!";
+            document.getElementById("winner").innerText = tie;
+        } else if (paper.onclick && choiceNumber === 3) {
+            const loose = "You loose!";
+            document.getElementById("winner").innerText = loose;
+        } else if (scissors.onclick && choiceNumber === 1) {
+            const loose = "You loose!";
+            document.getElementById("winner").innerText = loose;
+        } else if (scissors.onclick && choiceNumber === 2) {
+            const win = "You win!";
+            document.getElementById("winner").innerText = win;
+        } else if (scissors.onclick && choiceNumber === 3) {
+            const tie = "it's a tie!";
+            document.getElementById("winner").innerText = tie;
+        } */
+
+
 
 /*
 }
