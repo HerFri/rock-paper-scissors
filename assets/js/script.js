@@ -52,28 +52,30 @@
     })
 } */
 
-const draw = "It's a draw!";
-const loose = "You loose!";
-const win = "You win!";
+let draw = "It's a draw!";
+let loose = "You loose!";
+let win = "You win!";
+var yourScore = 0;
+var compScore = 0;
+var yourScoreBoard = document.getElementById("yourPoints");
+var compScoreBoard = document.getElementById("compPoints");
 
 
 function pickNumberRock() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
-            /* not used */
-        /*    const rockcomp = choiceNumber === 1;
-            const papercomp = choiceNumber === 2;
-            const scissorscomp = choiceNumber === 3; */
-            /* not used */
             if (choiceNumber === 1) {
                 showRockComp();            
                 document.getElementById("winner").innerText = draw;
-                console.log("It's a tie!");
             } else if (choiceNumber === 2){
                 showPaperComp();        
                 document.getElementById("winner").innerText = loose;
+                compScore++;
+                compScoreBoard.textContent = compScore;
             } else if (choiceNumber === 3){
                 showScissorsComp();             
                 document.getElementById("winner").innerText = win;
+                yourScore++;
+                yourScoreBoard.textContent = yourScore;
             }
         }
 function pickNumberPaper() {
@@ -81,12 +83,16 @@ function pickNumberPaper() {
             if (choiceNumber === 1) {
                 showRockComp();
                 document.getElementById("winner").innerText = win;
+                yourScore++;
+                yourScoreBoard.textContent = yourScore;
             } else if (choiceNumber === 2){
                 showPaperComp();
                 document.getElementById("winner").innerText = draw;
             } else if (choiceNumber === 3){
                 showScissorsComp();
                 document.getElementById("winner").innerText = loose;
+                compScore++;
+                compScoreBoard.textContent = compScore;
             }
         }
 
@@ -95,9 +101,13 @@ function pickNumberScissors() {
             if (choiceNumber === 1) {
                 showRockComp();
                 document.getElementById("winner").innerText = loose;
+                compScore++;
+                compScoreBoard.textContent = compScore;
             } else if (choiceNumber === 2){
                 showPaperComp();
                 document.getElementById("winner").innerText = win;
+                yourScore++;
+                yourScoreBoard.textContent = yourScore;
             } else if (choiceNumber === 3){
                 showScissorsComp();
                 document.getElementById("winner").innerText = draw;
