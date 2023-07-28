@@ -79,6 +79,7 @@ function pickNumberRock() {
                 yourScore++;
                 yourScoreBoard.textContent = yourScore;
             }
+            pointColor(); 
         }
 function pickNumberPaper() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
@@ -96,6 +97,7 @@ function pickNumberPaper() {
                 compScore++;
                 compScoreBoard.textContent = compScore;
             }
+            pointColor();
         }
 
 function pickNumberScissors() {
@@ -114,13 +116,27 @@ function pickNumberScissors() {
                 showScissorsComp();
                 document.getElementById("winner").innerText = draw;
             }
+            pointColor();
+}
+
+function pointColor() {
+    if (yourScore > compScore) {
+        yourScoreBoard.style.color = "green";
+        compScoreBoard.style.color = "red";
+    } else {
+        compScoreBoard.style.color = "green";
+        yourScoreBoard.style.color = "red";
+    } if (yourScore === compScore) {
+        yourScoreBoard.style.color = "#fcba03";
+        compScoreBoard.style.color = "#fcba03";
+    }
 }
 
 function reset() {
-    compScore = "0";
-    yourScore = "0";
-    yourPoints.innerText = "0";
-    compPoints.innerText = "0";
+    compScore = 0;
+    yourScore = 0;
+    yourPoints.innerText = 0;
+    compPoints.innerText = 0;
 }
      /*   console.log(choiceNumber);
         if (rock.onclick && choiceNumber === 1) {
