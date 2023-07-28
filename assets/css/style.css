@@ -1,8 +1,13 @@
-/* Extra small devices (phones, 600px and down) */
-
 body {
-    background-color: b;
+    font-size: 9px;
 }
+
+footer {
+    height: 100px;
+    font-size: 10px;
+}
+
+
 
 .imagecontainer {
     display: flex;
@@ -10,9 +15,24 @@ body {
 }
 
 .images {
-    width: 80px;
+    width: 60px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.imgFoot {
+    width: 10%;
+    margin: 0px 2px;
+}
+
+.rules {
+    display: flex;
+    justify-content: center;
+    margin-left: 13%;
+    margin-right: 10%;
+    margin-top: 10px;
+    border: 4px solid;
+    padding: 5px;
 }
 
 .imagechoice {
@@ -29,7 +49,7 @@ body {
 }
 
 .bold {
-    font-weight: bold;;
+    font-weight: bold;
 }
 
 .announce {
@@ -120,6 +140,37 @@ body {
     display: none;
   }
 
+/*  @media only screen and (min-width: 400px) {
+    
+    .rules {
+    margin-right: 33%;
+    margin-left: 30%;
+    }
+} */
+
+@media only screen and (min-width: 375px) {
+    .rules {
+        margin-left: 20%;
+        margin-right: 20%;
+        padding-left: 5%
+    }
+}
+
+@media only screen and (min-width: 500px) {
+
+    .images {
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    .rules {
+        padding-left: 10%;
+    }
+}
+
+
 @media only screen and (min-width: 768px) {
 
     .images {
@@ -139,8 +190,31 @@ body {
     .fight {
         height: 200px;
     }
+
+    body {
+        font-size: 25px;
+    }
+
+    footer {
+        font-size: 25px;
+    }
+
+    .rules {
+        margin-left: 20%; 
+        margin-right: 20%;
+        padding-left: 10px;
+    }
+
+    .imgFoot {
+        width: 10%;
+    }
 } 
 
+@media only screen and (min-width: 900px) {
+    .rules {
+        padding-left: 30px;
+    }
+}
 @media only screen and (min-width: 992px) {
 
     .vs {
@@ -149,6 +223,17 @@ body {
 
     .images {
         width: 15%;
+    }
+
+    .rules {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .imgFoot {
+        width: 10%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -163,22 +248,39 @@ body {
     }
 
     .images {
-        width: 10%;
+        width: 180px;
     }
 
     .announce {
         font-size: 50px;
     }
+
+    .rules {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .imgFoot {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 1920px) {
 
     .images {
-        margin-right: 100px
+        margin-right: 100px;
     }
 
     .imagechoice {
         width: 140%;
+    }
+
+    .rules {
+        margin-bottom: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding-left: 60px;
     }
 
 }
