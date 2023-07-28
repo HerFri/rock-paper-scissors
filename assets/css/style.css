@@ -88,13 +88,19 @@ body {
     margin-top: 10px;
     margin-left: 5%;
     margin-right: 5%;
-    width: 50%;
+    width: 33%;
     height: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+}
+
+#resetbtn {
+    margin-top: 10px;
+    height: 50px;
+    width: 300%;
 }
 
 .flex {

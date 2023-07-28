@@ -53,11 +53,14 @@
     </div>
     <div class="result">
         <p id="winner">Click on Rock, Paper, or Scissors above!</p>
-    </div> 
+    </div>
     <div class="flex">
         <div class="score">
             <p>Your Score:</p>
             <p id="yourPoints">0</p>
+        </div>
+        <div class="flex">
+            <button id="resetbtn" onClick="reset()">Reset</button>
         </div>
         <div class="score">
             <p>Computer Score:</p>
@@ -65,7 +68,9 @@
         </div>
     </div>
     </section> 
-    <footer></footer>
+    <footer>
+        <p>Rules: Rock beats Scissors. Paper beats Rock. Scissors beat Paper.</p>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -52,6 +52,8 @@
     })
 } */
 
+
+
 let draw = "It's a draw!";
 let loose = "You loose!";
 let win = "You win!";
@@ -112,6 +114,13 @@ function pickNumberScissors() {
                 showScissorsComp();
                 document.getElementById("winner").innerText = draw;
             }
+}
+
+function reset() {
+    compScore = "0";
+    yourScore = "0";
+    yourPoints.innerText = "0";
+    compPoints.innerText = "0";
 }
      /*   console.log(choiceNumber);
         if (rock.onclick && choiceNumber === 1) {
