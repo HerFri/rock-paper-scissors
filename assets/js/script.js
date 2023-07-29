@@ -40,17 +40,24 @@
     )
     } */
 
-/* function playGame() {
-    document.getElementById("rock").addEventListener("click", function() {
-        pickNumber();
-    })
-    document.getElementById("paper").addEventListener("click", function() {
-        pickNumber();
-    })
-    document.getElementById("scissors").addEventListener("click", function() {
-        pickNumber();
-    })
-} */
+
+document.getElementById("rock").addEventListener("click", function() {
+    showRock();
+    pickNumberRock();
+})
+document.getElementById("paper").addEventListener("click", function() {
+    showPaper();
+    pickNumberPaper();
+})
+document.getElementById("scissors").addEventListener("click", function() {
+    showScissors();
+    pickNumberScissors();
+})
+
+document.getElementById("resetbtn").addEventListener("click", function() {
+    reset();
+})
+
 
 
 
@@ -61,21 +68,22 @@ var yourScore = 0;
 var compScore = 0;
 var yourScoreBoard = document.getElementById("yourPoints");
 var compScoreBoard = document.getElementById("compPoints");
+var winner = document.getElementById("winner");
 
 
 function pickNumberRock() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
             if (choiceNumber === 1) {
                 showRockComp();            
-                document.getElementById("winner").innerText = draw;
+                winner.innerText = draw;
             } else if (choiceNumber === 2){
                 showPaperComp();        
-                document.getElementById("winner").innerText = loose;
+                winner.innerText = loose;
                 compScore++;
                 compScoreBoard.textContent = compScore;
             } else if (choiceNumber === 3){
                 showScissorsComp();             
-                document.getElementById("winner").innerText = win;
+                winner.innerText = win;
                 yourScore++;
                 yourScoreBoard.textContent = yourScore;
             }
@@ -85,15 +93,15 @@ function pickNumberPaper() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
             if (choiceNumber === 1) {
                 showRockComp();
-                document.getElementById("winner").innerText = win;
+                winner.innerText = win;
                 yourScore++;
                 yourScoreBoard.textContent = yourScore;
             } else if (choiceNumber === 2){
                 showPaperComp();
-                document.getElementById("winner").innerText = draw;
+                winner.innerText = draw;
             } else if (choiceNumber === 3){
                 showScissorsComp();
-                document.getElementById("winner").innerText = loose;
+                winner.innerText = loose;
                 compScore++;
                 compScoreBoard.textContent = compScore;
             }
@@ -104,28 +112,28 @@ function pickNumberScissors() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
             if (choiceNumber === 1) {
                 showRockComp();
-                document.getElementById("winner").innerText = loose;
+                winner.innerText = loose;
                 compScore++;
                 compScoreBoard.textContent = compScore;
             } else if (choiceNumber === 2){
                 showPaperComp();
-                document.getElementById("winner").innerText = win;
+                winner.innerText = win;
                 yourScore++;
                 yourScoreBoard.textContent = yourScore;
             } else if (choiceNumber === 3){
                 showScissorsComp();
-                document.getElementById("winner").innerText = draw;
+                winner.innerText = draw;
             }
             pointColor();
 }
 
 function pointColor() {
     if (yourScore > compScore) {
-        yourScoreBoard.style.color = "green";
-        compScoreBoard.style.color = "red";
+        yourScoreBoard.style.color = "#008000";
+        compScoreBoard.style.color = "#ff0000";
     } else {
-        compScoreBoard.style.color = "green";
-        yourScoreBoard.style.color = "red";
+        compScoreBoard.style.color = "#008000";
+        yourScoreBoard.style.color = "#ff0000";
     } if (yourScore === compScore) {
         yourScoreBoard.style.color = "#fcba03";
         compScoreBoard.style.color = "#fcba03";
@@ -137,79 +145,9 @@ function reset() {
     yourScore = 0;
     yourPoints.innerText = 0;
     compPoints.innerText = 0;
-}
-     /*   console.log(choiceNumber);
-        if (rock.onclick && choiceNumber === 1) {
-            const tie = "it's a tie!";
-            
-        } else if (rock.onclick && choiceNumber === 2) {
-            
-        } else if (rock.onclick && choiceNumber === 3) {
-            
-        }
-        /* value of rock is at the beginning, that is why it gets false message for following: */
-       /* else if (paper.onclick && choiceNumber === 1) {
-            const win = "You win!";
-            document.getElementById("winner").innerText = win;
-        } else if (paper.onclick && choiceNumber === 2) {
-            const tie = "it's a tie!";
-            document.getElementById("winner").innerText = tie;
-        } else if (paper.onclick && choiceNumber === 3) {
-            const loose = "You loose!";
-            document.getElementById("winner").innerText = loose;
-        } else if (scissors.onclick && choiceNumber === 1) {
-            const loose = "You loose!";
-            document.getElementById("winner").innerText = loose;
-        } else if (scissors.onclick && choiceNumber === 2) {
-            const win = "You win!";
-            document.getElementById("winner").innerText = win;
-        } else if (scissors.onclick && choiceNumber === 3) {
-            const tie = "it's a tie!";
-            document.getElementById("winner").innerText = tie;
-        } */
-
-
-
-/*
-}
-
-function winner() {
-
-
-    if (rock.onclick) {
-        console.log("Rock has been clicked")
-    }
-}
-           
-            
-            /*console.log(ComputerNumber) */
-
-
-
-
-
-
-   /* document.getElementById("rock").addEventListener("click", function() {
-
-    } */
-    
-    
-
-
-function checkAnswer() {
-
-}
-
-function incrementScore() {
-
-}
-
-function incrementStreak() {
-    
-}
-
-function selectChoice() {
-
+    yourPoints.style.color = "#000000";
+    compPoints.style.color = "#000000";
+    winner.innerText = "Click on Rock, Paper, or Scissors above!";
 }
 
 function showRock() {
