@@ -62,7 +62,7 @@ document.getElementById("resetbtn").addEventListener("click", function() {
 
 
 let draw = "It's a draw!";
-let loose = "You loose!";
+let lose = "You lose!";
 let win = "You win!";
 var yourScore = 0;
 var compScore = 0;
@@ -78,7 +78,7 @@ function pickNumberRock() {
                 winner.innerText = draw;
             } else if (choiceNumber === 2){
                 showPaperComp();        
-                winner.innerText = loose;
+                winner.innerText = lose;
                 compScore++;
                 compScoreBoard.textContent = compScore;
             } else if (choiceNumber === 3){
@@ -101,7 +101,7 @@ function pickNumberPaper() {
                 winner.innerText = draw;
             } else if (choiceNumber === 3){
                 showScissorsComp();
-                winner.innerText = loose;
+                winner.innerText = lose;
                 compScore++;
                 compScoreBoard.textContent = compScore;
             }
@@ -112,7 +112,7 @@ function pickNumberScissors() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
             if (choiceNumber === 1) {
                 showRockComp();
-                winner.innerText = loose;
+                winner.innerText = lose;
                 compScore++;
                 compScoreBoard.textContent = compScore;
             } else if (choiceNumber === 2){
