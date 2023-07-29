@@ -21,8 +21,8 @@ footer {
 }
 
 .imgFoot {
-    width: 10%;
-    margin: 0px 2px;
+    width: 5%;
+    margin: 0px 10px;
 }
 
 .rules {
@@ -33,6 +33,7 @@ footer {
     margin-top: 10px;
     border: 4px solid;
     padding: 5px;
+    font-size: 13px;
 }
 
 .imagechoice {
@@ -57,7 +58,6 @@ footer {
 }
 
 .fight {
-    background-color: white;
     margin-top: -10px;
     height: 100px;
     margin-left: 5%;
@@ -67,7 +67,6 @@ footer {
 }
 
 .choice {
-    background-color: white;
     width: 33%;
     display: flex;
     justify-content: center;
@@ -92,18 +91,17 @@ footer {
 }
 
 .result {
-    background-color: white;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 20px;
     border: 4px solid;
     display: flex;
     justify-content: center;
+    font-size: 15px;
     
 }
 
 .score {
-    background-color: white;
     border: 4px solid;
     margin-top: 10px;
     margin-left: 5%;
@@ -115,6 +113,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    font-size: 10px;
 }
 
 #resetbtn {
@@ -138,21 +137,17 @@ footer {
 
 #first, #second, #third, #fourth, #fifth, #sixth {
     display: none;
-  }
-
-/*  @media only screen and (min-width: 400px) {
-    
-    .rules {
-    margin-right: 33%;
-    margin-left: 30%;
-    }
-} */
+}
 
 @media only screen and (min-width: 375px) {
     .rules {
-        margin-left: 20%;
-        margin-right: 20%;
         padding-left: 5%
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .rules {
+        padding-left: 25px;
     }
 }
 
@@ -161,12 +156,28 @@ footer {
     .images {
         width: 100px;
     }
+
+    .rules {
+        padding-left: 60px;
+        font-size: 15px;
+    }
+
+
 }
 
 @media only screen and (min-width: 600px) {
 
     .rules {
-        padding-left: 10%;
+        padding-left: 100px;
+        font-size: px;
+    }
+
+    .score {
+        font-size: 20px;
+    }
+
+    .result {
+        font-size: 20px
     }
 }
 
@@ -200,10 +211,8 @@ footer {
     }
 
     .rules {
-        margin-left: 20%; 
-        margin-right: 20%;
-        padding-left: 10px;
-    }
+        padding-left: 84px;
+    } 
 
     .imgFoot {
         width: 10%;
@@ -212,7 +221,7 @@ footer {
 
 @media only screen and (min-width: 900px) {
     .rules {
-        padding-left: 30px;
+        padding-left: 130px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -226,8 +235,7 @@ footer {
     }
 
     .rules {
-        margin-left: 200px;
-        margin-right: 200px;
+        padding-left: 160px;
     }
 
     .imgFoot {
@@ -256,8 +264,8 @@ footer {
     }
 
     .rules {
-        margin-left: 200px;
-        margin-right: 200px;
+        padding-left: 140px;
+        font-size: 20px;
     }
 
     .imgFoot {
@@ -279,9 +287,7 @@ footer {
 
     .rules {
         margin-bottom: 10px;
-        margin-left: 25%;
-        margin-right: 25%;
-        padding-left: 60px;
+        padding-left: 220px;
     }
 
 }
