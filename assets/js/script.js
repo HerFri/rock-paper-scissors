@@ -30,59 +30,59 @@ function initializeGame() {
 
 function pickNumberRock() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
-            if (choiceNumber === 1) {
-                showRockComp();            
-                winner.innerText = DRAW;
-            } else if (choiceNumber === 2){
-                showPaperComp();        
-                winner.innerText = LOSE;
-                compScore++;
-                compScoreBoard.textContent = compScore;
-            } else if (choiceNumber === 3){
-                showScissorsComp();             
-                winner.innerText = WIN;
-                yourScore++;
-                yourScoreBoard.textContent = yourScore;
-            }
-            pointColor(); 
-        }
+    if (choiceNumber === 1) {
+        showRockComp();            
+        winner.innerText = DRAW;
+    } else if (choiceNumber === 2){
+        showPaperComp();        
+        winner.innerText = LOSE;
+        compScore++;
+        compScoreBoard.textContent = compScore;
+    } else if (choiceNumber === 3){
+        showScissorsComp();             
+        winner.innerText = WIN;
+        yourScore++;
+        yourScoreBoard.textContent = yourScore;
+    }
+    pointColor(); 
+}
         
 function pickNumberPaper() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
-            if (choiceNumber === 1) {
-                showRockComp();
-                winner.innerText = WIN;
-                yourScore++;
-                yourScoreBoard.textContent = yourScore;
-            } else if (choiceNumber === 2){
-                showPaperComp();
-                winner.innerText = DRAW;
-            } else if (choiceNumber === 3){
-                showScissorsComp();
-                winner.innerText = LOSE;
-                compScore++;
-                compScoreBoard.textContent = compScore;
-            }
-            pointColor();
-        }
+    if (choiceNumber === 1) {
+        showRockComp();
+        winner.innerText = WIN;
+        yourScore++;
+        yourScoreBoard.textContent = yourScore;
+    } else if (choiceNumber === 2){
+        showPaperComp();
+        winner.innerText = DRAW;
+    } else if (choiceNumber === 3){
+        showScissorsComp();
+        winner.innerText = LOSE;
+        compScore++;
+        compScoreBoard.textContent = compScore;
+    }
+    pointColor();
+}
 
 function pickNumberScissors() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
-            if (choiceNumber === 1) {
-                showRockComp();
-                winner.innerText = LOSE;
-                compScore++;
-                compScoreBoard.textContent = compScore;
-            } else if (choiceNumber === 2){
-                showPaperComp();
-                winner.innerText = WIN;
-                yourScore++;
-                yourScoreBoard.textContent = yourScore;
-            } else if (choiceNumber === 3){
-                showScissorsComp();
-                winner.innerText = DRAW;
-            }
-            pointColor();
+    if (choiceNumber === 1) {
+        showRockComp();
+        winner.innerText = LOSE;
+        compScore++;
+        compScoreBoard.textContent = compScore;
+    } else if (choiceNumber === 2){
+        showPaperComp();
+        winner.innerText = WIN;
+        yourScore++;
+        yourScoreBoard.textContent = yourScore;
+    } else if (choiceNumber === 3){
+        showScissorsComp();
+        winner.innerText = DRAW;
+    }
+    pointColor();
 }
 
 function pointColor() {
