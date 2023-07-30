@@ -99,6 +99,7 @@ function pointColor() {
 }
 
 function reset() {
+    confirm("Do you really want to reset the game?");
     compScore = 0;
     yourScore = 0;
     yourScoreBoard.innerText = 0;
