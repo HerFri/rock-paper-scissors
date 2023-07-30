@@ -1,66 +1,3 @@
-/* var choices = ["rock", "paper", "scissors"] */
-
-/*document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName("input");
-
-    for (let button of buttons) {
-        button.addEventListener("click", function() {
-            if (this.get)
-        }
-         )
-    }
-
-}) */
-
-/* function generateNumber() {
-    let genNbr = Math.floor(Math.random() * 3) +1;
-} */
-
-/*function runGame() {
-    let rockBtn = getElementById("rock");
-    let paperBtn = getElementById("paper");
-    let scissorsBtn = getElementById("scissors");
-    let playerOptions = [rockBtn,paperBtn,scissorsBtn];
-    let computerOptions = ["rock","paper","scissors"];
-
-    playerOptions.forEach(option => {
-        option.addEventListener("click", function(){
-
-            let choiceNumber = Math.floor(Math.random() * 3) +1;
-            let ComputerChoice = computerOptions[choiceNumber];
-            if (choiceNumber === 1){
-                showRockComp()
-            } else if (choiceNumber === 2){
-                showPaperComp()
-            } else if (choiceNumber === 3){
-                showScissorsComp()
-            }
-    })
-    }
-    )
-    } */
-
-
-document.getElementById("rock").addEventListener("click", function() {
-    showRock();
-    pickNumberRock();
-})
-document.getElementById("paper").addEventListener("click", function() {
-    showPaper();
-    pickNumberPaper();
-})
-document.getElementById("scissors").addEventListener("click", function() {
-    showScissors();
-    pickNumberScissors();
-})
-
-document.getElementById("resetbtn").addEventListener("click", function() {
-    reset();
-})
-
-
-
-
 let draw = "It's a draw!";
 let lose = "You lose!";
 let win = "You win!";
@@ -143,12 +80,31 @@ function pointColor() {
 function reset() {
     compScore = 0;
     yourScore = 0;
-    yourPoints.innerText = 0;
-    compPoints.innerText = 0;
-    yourPoints.style.color = "#000000";
-    compPoints.style.color = "#000000";
+    yourScoreBoard.innerText = 0;
+    compScoreBoard.innerText = 0;
+    yourScoreBoard.style.color = "#000000";
+    compScoreBoard.style.color = "#000000";
     winner.innerText = "Click on Rock, Paper, or Scissors above!";
 }
+
+document.getElementById("rock").addEventListener("click", function() {
+    showRock();
+    pickNumberRock();
+});
+
+document.getElementById("paper").addEventListener("click", function() {
+    showPaper();
+    pickNumberPaper();
+});
+
+document.getElementById("scissors").addEventListener("click", function() {
+    showScissors();
+    pickNumberScissors();
+});
+
+document.getElementById("resetbtn").addEventListener("click", function() {
+    reset();
+});
 
 function showRock() {
   document.getElementById("first").style.display ='block';
