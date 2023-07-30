@@ -110,33 +110,33 @@ function reset() {
 }
 
 function showRock() {
-  document.getElementById("first").style.display ='block';
-  document.getElementById("second").style.display ='none';
-  document.getElementById("third").style.display ='none';
+  document.getElementById("first").style.display ="block";
+  document.getElementById("second").style.display ="none";
+  document.getElementById("third").style.display ="none";
 }
 
 function showPaper() {
-    document.getElementById("first").style.display ='none';
-    document.getElementById("second").style.display ='block';
-    document.getElementById("third").style.display ='none';
+    document.getElementById("first").style.display ="none";
+    document.getElementById("second").style.display ="block";
+    document.getElementById("third").style.display ="none";
 }
 
 function showScissors() {
-    document.getElementById("first").style.display ='none';
-    document.getElementById("second").style.display ='none';
-    document.getElementById("third").style.display ='block';
+    document.getElementById("first").style.display ="none";
+    document.getElementById("second").style.display ="none";
+    document.getElementById("third").style.display ="block";
 }
 
 function showRockComp() {
-    document.getElementById("fourth").style.display ='block';
-    document.getElementById("fifth").style.display ='none';
-    document.getElementById("sixth").style.display ='none';
+    document.getElementById("fourth").style.display ="block";
+    document.getElementById("fifth").style.display ="none";
+    document.getElementById("sixth").style.display ="none";
   }
   
   function showPaperComp() {
-      document.getElementById("fourth").style.display ='none';
-      document.getElementById("fifth").style.display ='block';
-      document.getElementById("sixth").style.display ='none';
+      document.getElementById("fourth").style.display ="none";
+      document.getElementById("fifth").style.display ="block";
+      document.getElementById("sixth").style.display ="none";
   }
   
   function showScissorsComp() {
