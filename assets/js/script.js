@@ -140,9 +140,9 @@ function showRockComp() {
   }
   
   function showScissorsComp() {
-      document.getElementById("fourth").style.display ='none';
-      document.getElementById("fifth").style.display ='none';
-      document.getElementById("sixth").style.display ='block';
+      document.getElementById("fourth").style.display ="none";
+      document.getElementById("fifth").style.display ="none";
+      document.getElementById("sixth").style.display ="block";
   }
 
   addEventListener("DOMContentLoaded", initializeGame);
