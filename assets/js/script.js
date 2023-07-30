@@ -1,44 +1,65 @@
-let draw = "It's a draw!";
-let lose = "You lose!";
-let win = "You win!";
-var yourScore = 0;
-var compScore = 0;
-var yourScoreBoard = document.getElementById("yourPoints");
-var compScoreBoard = document.getElementById("compPoints");
-var winner = document.getElementById("winner");
+const DRAW = "It's a draw!";
+const LOSE = "You lose!";
+const WIN = "You win!";
+let yourScore = 0;
+let compScore = 0;
+let yourScoreBoard = document.getElementById("yourPoints");
+let compScoreBoard = document.getElementById("compPoints");
+let winner = document.getElementById("winner");
 
+function initializeGame() {
+    document.getElementById("rock").addEventListener("click", function() {
+        showRock();
+        pickNumberRock();
+    });
+
+    document.getElementById("paper").addEventListener("click", function() {
+        showPaper();
+        pickNumberPaper();
+    });
+
+    document.getElementById("scissors").addEventListener("click", function() {
+        showScissors();
+        pickNumberScissors();
+    });
+
+    document.getElementById("resetbtn").addEventListener("click", function() {
+        reset();
+    });
+}
 
 function pickNumberRock() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
             if (choiceNumber === 1) {
                 showRockComp();            
-                winner.innerText = draw;
+                winner.innerText = DRAW;
             } else if (choiceNumber === 2){
                 showPaperComp();        
-                winner.innerText = lose;
+                winner.innerText = LOSE;
                 compScore++;
                 compScoreBoard.textContent = compScore;
             } else if (choiceNumber === 3){
                 showScissorsComp();             
-                winner.innerText = win;
+                winner.innerText = WIN;
                 yourScore++;
                 yourScoreBoard.textContent = yourScore;
             }
             pointColor(); 
         }
+        
 function pickNumberPaper() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
             if (choiceNumber === 1) {
                 showRockComp();
-                winner.innerText = win;
+                winner.innerText = WIN;
                 yourScore++;
                 yourScoreBoard.textContent = yourScore;
             } else if (choiceNumber === 2){
                 showPaperComp();
-                winner.innerText = draw;
+                winner.innerText = DRAW;
             } else if (choiceNumber === 3){
                 showScissorsComp();
-                winner.innerText = lose;
+                winner.innerText = LOSE;
                 compScore++;
                 compScoreBoard.textContent = compScore;
             }
@@ -49,17 +70,17 @@ function pickNumberScissors() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
             if (choiceNumber === 1) {
                 showRockComp();
-                winner.innerText = lose;
+                winner.innerText = LOSE;
                 compScore++;
                 compScoreBoard.textContent = compScore;
             } else if (choiceNumber === 2){
                 showPaperComp();
-                winner.innerText = win;
+                winner.innerText = WIN;
                 yourScore++;
                 yourScoreBoard.textContent = yourScore;
             } else if (choiceNumber === 3){
                 showScissorsComp();
-                winner.innerText = draw;
+                winner.innerText = DRAW;
             }
             pointColor();
 }
@@ -86,25 +107,6 @@ function reset() {
     compScoreBoard.style.color = "#000000";
     winner.innerText = "Click on Rock, Paper, or Scissors above!";
 }
-
-document.getElementById("rock").addEventListener("click", function() {
-    showRock();
-    pickNumberRock();
-});
-
-document.getElementById("paper").addEventListener("click", function() {
-    showPaper();
-    pickNumberPaper();
-});
-
-document.getElementById("scissors").addEventListener("click", function() {
-    showScissors();
-    pickNumberScissors();
-});
-
-document.getElementById("resetbtn").addEventListener("click", function() {
-    reset();
-});
 
 function showRock() {
   document.getElementById("first").style.display ='block';
@@ -141,3 +143,5 @@ function showRockComp() {
       document.getElementById("fifth").style.display ='none';
       document.getElementById("sixth").style.display ='block';
   }
+
+  addEventListener("DOMContentLoaded", initializeGame);
