@@ -3,7 +3,7 @@ Visit the live page [here](https://herfri.github.io/rock-paper-scissors/)
 
 Rock-Paper-Scissors is an interactive online/webbrowser game based on the classic hand game that is usually played for making a decision by two persons. On this website, players can compete against the computer, that randomly chooses between rock, paper and scissors. There is no limit for playing rounds, and the score can be reset by any given time. Have fun playing!
 
-![mockup]()
+![mockup](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/mockup.PNG?raw=true)
 
 The mockup image has been generated on https://ui.dev/amiresponsive.
 
@@ -21,3 +21,19 @@ In terms of colors I chose a basic color scheme, as the focus of the website is 
 ![colorpalette](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/colorpalette.png?raw=true)
 
 The colorpalette above has been generated with [coolors.co](https://coolors.co/000000-ffffff-ff0000-008000-fcba03)
+
+## Fonts
+For the text elements of my website I used the 'Segoe UI' font, as it is clean and well readable and contributes to the basic style of the website.
+
+# Structure
+## Wireframes
+For the structural planning of my website, I created some wireframes using the wireframe software [Balsamiq](https://balsamiq.com/).
+
+Here are the wireframes, including both the desktop and mobile view:
+
+* [Desktop wireframe]()
+* [Mobile view wireframe]()
+
+
+
+## Final Structure
