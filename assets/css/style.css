@@ -134,8 +134,11 @@ footer {
     .imgFoot {
         width: 50px;
     }
-}
 
+    .announce {
+        font-size: 14px;
+    }
+}
 
 @media only screen and (min-width: 500px) {
 
@@ -150,6 +153,10 @@ footer {
 
     .score {
         font-size: 15px;
+    }
+
+    .announce {
+        font-size: 18px;
     }
 }
 
@@ -190,7 +197,7 @@ footer {
     }
 
     .announce {
-        font-size: 25px;
+        font-size: 22px;
     }
 } 
 
