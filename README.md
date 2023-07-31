@@ -46,12 +46,12 @@ The website is divided into 6 core sections:
 # Features
 ## Header with Title
 In the header section of the website is the title of the website, encouraging visitors of the website to play against the computer.
-![header]()
+![header](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/header.PNG?raw=true)
 
 ## Clickable Images for Player Choice
 Under the title, visitors of the website will find three clickable images illustrating hands forming rock, paper and scissors, which are the options players can choose from in the game, when competing against the computer.
-![playerchoice]()
+![playerchoice](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/choiceicons.PNG?raw=true)
 
 ## 'Fight' Area
 When one of the three options is clicked, the players' choice is displayed on the left side of the 'fight' area and the computer picks a random choice that is displayed on the right side. To make it more clear whose choice is whose, the short texts 'Player' and 'Computer' are located over the respective choice icons. In between the players' and computers' choice, there is a 'vs' icon in the middle, the short version of the latin word 'versus', which means 'against', to give the game a feel of a fight that the player has against the computer. In the screenshot below, the players' choice is rock, whereas the computer's choice is scissors.
-![fightarea]()
+![fightarea](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/fightarea.PNG?raw=true)
