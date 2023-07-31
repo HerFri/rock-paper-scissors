@@ -6,6 +6,7 @@ let compScore = 0;
 let yourScoreBoard = document.getElementById("yourPoints");
 let compScoreBoard = document.getElementById("compPoints");
 let winner = document.getElementById("winner");
+let items = document.getElementsByClassName("divchoices");
 
 function initializeGame() {
     document.getElementById("rock").addEventListener("click", function() {
@@ -99,7 +100,9 @@ function pointColor() {
 }
 
 function resetChoices() {
-    document.getElementsByClassName("divchoices").style.display ="none";
+    for (let item of items) {
+        item.style.display = "none";
+    }   
 }
 
 function reset() {
