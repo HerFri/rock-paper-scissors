@@ -46,6 +46,7 @@ The website is divided into 6 core sections:
 # Features
 ## Header with Title
 In the header section of the website is the title of the website, encouraging visitors of the website to play against the computer.
+
 ![header](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/header.PNG?raw=true)
 
 ## Clickable Images for Player Choice
