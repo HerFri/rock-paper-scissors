@@ -38,7 +38,7 @@ Here are the wireframes, including both the desktop and mobile view:
 The website is divided into 6 core sections:
 * Header section with the title of the website
 * A section where the player picks his/her choice between Rock, Paper and Scissors
-* The 'fight' section, where the players' and computers' choice are illustrated
+* The 'fight' section, where the players' and computers' choice are displayed
 * The result section that states who has won the round or if it is a draw
 * The score section, where the players' and computers' score are shown, including a reset button to reset the score and start a new game
 * The footer section, where the rules of the game are illustrated
