@@ -98,8 +98,13 @@ function pointColor() {
     }
 }
 
+function resetChoices() {
+    document.getElementsByClassName("divchoices").style.display ="none";
+}
+
 function reset() {
     confirm("Do you really want to reset the game?");
+    resetChoices();
     compScore = 0;
     yourScore = 0;
     yourScoreBoard.innerText = 0;
