@@ -31,8 +31,8 @@ For the structural planning of my website, I created some wireframes using the w
 
 Here are the wireframes, including both the desktop and mobile view:
 
-* [Desktop wireframe]()
-* [Mobile view wireframe]()
+* [Desktop wireframe](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/wireframe.png?raw=true)
+* [Mobile view wireframe](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/wireframe-mobile.png?raw=true)
 
 
 
