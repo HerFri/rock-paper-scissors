@@ -51,10 +51,6 @@ footer {
     font-weight: bold;
 }
 
-.announce {
-    font-size: 15px;
-}
-
 .fight {
     margin-top: -10px;
     height: 100px;
@@ -123,7 +119,7 @@ footer {
 }
 
 #player {
-    margin-left: 15%;
+    margin-left: 20%;
 }
 
 #computer {

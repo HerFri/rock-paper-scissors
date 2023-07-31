@@ -34,6 +34,23 @@ Here are the wireframes, including both the desktop and mobile view:
 * [Desktop wireframe](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/wireframe.png?raw=true)
 * [Mobile view wireframe](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/wireframe-mobile.png?raw=true)
 
-
-
 ## Final Structure
+The website is divided into 6 core sections:
+* Header section with the title of the website
+* A section where the player picks his/her choice between Rock, Paper and Scissors
+* The 'fight' section, where the players' and computers' choice are illustrated
+* The result section that states who has won the round or if it is a draw
+* The score section, where the players' and computers' score are shown, including a reset button to reset the score and start a new game
+* The rules section, where the rules of the game are illustrated
+
+# Features
+## Header with Title
+In the header section of the website is the title of the website, encouraging visitors of the website to play against the computer.
+![header]()
+
+## Clickable Images for Player Choice
+Under the title, visitors of the website will find three clickable images illustrating hands forming rock, paper and scissors, which are the options players can choose from in the game, when competing against the computer.
+![playerchoice]()
+
+## 'Fight' Area
+When one of the three options is clicked, the players' choice is displayed on the left side of the 'fight' area and the computer picks a random choice that is displayed on the right side. To make it more clear whose choice is whose, the short texts 'Player' and 'Computer' are located over the respective choice icons. In between the players' and computers' choice, there is a 'vs' icon in the middle, the short version of the latin word 'versus', which means 'against', to give the game a feel of a fight that the player has against the computer. In the screenshot below, the choise ... has bee nmade
