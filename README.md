@@ -1,39 +1,19 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock-Paper-Scissors
+Visit the live page [here](https://herfri.github.io/rock-paper-scissors/)
 
-Welcome,
+Rock-Paper-Scissors is an interactive online/webbrowser game based on the classic hand game that is usually played for making a decision by two persons. On this website, players can compete against the computer, that randomly chooses between rock, paper and scissors. There is no limit for playing rounds, and the score can be reset by any given time. Enjoy!
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# User Experience
+## User Stories
+* As a user who never played the game before, I want to learn the rules of the game by easily understandable instructions.
+* As a user, I want to find interactive elements for playing the game, like buttons, in a short time.
+* As a user, I want to find a clean layout, so I can find  my score and the score of the computer in a short time and view while playing the game.
+* As a user, I want to be able to reset my and the computers' score and start a new game. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+# Design
+## Colors
+In terms of colors I chose a basic color scheme, as the focus of the website is the game itself. The primary colors are black (#000000) and white (#FFFFFF). White is the background of the website and black is used for the texts, icons and borders of the respective areas like result area and score area. To highlight the scores and mark who is leading the game, the score of the leading player is highlighted in green (#008000), while the losing score is highlighted in red (#ff0000). When the players' score equals the computers' score, both scores are highlighted in yellow (#fcba03).
 
-## Codeanywhere Reminders
+![colorplaette]
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+The colorpalette above has been generated with [coolors.co](https://coolors.co/000000-ffffff-ff0000-008000-fcba03)
