@@ -60,6 +60,9 @@ When one of the three options is clicked, the players' choice is displayed on th
 ## Result 
 The result section comprises a textbox with a short text that indicates, depending on the choices of player and computer, whether the player wins or loses or if it is a draw. The default text instructs the player to choose one of the options above for playing.
 ![result](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/result.PNG?raw=true)
+![resultwin](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resultwin.PNG?raw=true)
+![resultlose](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resultlose.PNG?raw=true)
+![resultdraw](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resultdraw.PNG?raw=true)
 
 ## Score section
 As the name says, the score section displays the scores of the player and computer. The score counter of the respective side increments by one point when the player or computer wins. The scores change colors to green or red to mark the leading score.
@@ -73,4 +76,4 @@ By clicking 'Ok', the scores are reset to 0 and the 'fight area' will be cleared
 
 ## Footer
 In the footer section the rules of the game are illustrated by using the images of the option icons depicting 'Rock', 'Paper' and 'Scissors'. The player is instructed that 'Rock' beats 'Scissors', 'Scissors' beat 'Paper' and 'Paper' beats 'Rock'.
-![rules]()
+![rules](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/rules.PNG?raw=true)
