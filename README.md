@@ -113,17 +113,17 @@ The code of my website has been tested with following validators:
 
 ## Performance Test
 To test the performance of the website the Google Lighthouse test was used and showed very good results:
-![lighthouseresult]()
+![lighthouseresult](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/lighthouse.PNG?raw=true)
 
 ## Responsiveness
 To test responsiveness, I used the website [AmIresponsive](https://ui.dev/amiresponsive?url=https://herfri.github.io/rock-paper-scissors/) that generated the [mockup image]().
 Moreover, I used Chrome (Version 115.0.5790.110) Developer Tools to simulate viewports of different devices, which showed that my website was fully responsive:
 
-![galaxyfold]()
+![galaxyfold](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/galaxyfold.PNG?raw=true)
 
-![iphone]()
+![iphone](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/iphone.PNG?raw=true)
 
-![ipad]()
+![ipad](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/ipad.PNG?raw=true)
 
 ## Browser Testing
 I checked the layout and appearance of my website for consistency on different browsers.
@@ -138,8 +138,7 @@ Result: Layout and all functions work throughout the tested browsers.
 | Clickable Images of 'Rock','Paper' and 'Scissors'| When clicked, the respective image is displayed in the 'fight' area, the computers' choice is displayed in the 'fight' area, the result-text, whether it is a win, lose or draw, is displayed in the result textbox, the score increments or stays the same, changes color to green/red/yellow, depending if player wins, loses or it is a draw    | Clicked on each of the clickable images | Image is displayed in the 'fight' area, computers' choice is displayed in the 'fight' area, result-text is displayed in the result textbox, score increments or stays the same and changes color depending if it is a win, lose or a draw.|   |
 | Reset Button | When clicked, a confirmation dialog box is displayed, asking the player if he/she really wants to reset the game  | Clicked on Reset Button    | Confirmation dialog box is displayed, asking the player if he/she really wants to reset the game |   |
 | 'Ok' button of confirmation dialog box | When clicked, the scores reset to 0 and the 'fight area' will be cleared off the previous chosen options by player and computer.               | Clicked 'Ok' button | Scores are reset to 0, 'fight area' is cleared off the previous chosen options by player and computer.                            |
-| 'Cancel' button of confirmation dialog box     | When clicked, the scores stay the same just like before clicking the reset button                                                        | Clicked 'Cancel' button                                          | Scores stay the same just like before clicking the reset button                  |
-| 
+| 'Cancel' button of confirmation dialog box     | When clicked, the scores stay the same just like before clicking the reset button                                                        | Clicked 'Cancel' button                                          | Scores stay the same just like before clicking the reset button                  | 
 
 ## Testing User Stories
 | Expectation                                                                                                                                          | Result                                                                                                                                                                                                                                                                           |
