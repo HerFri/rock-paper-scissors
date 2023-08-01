@@ -58,18 +58,18 @@ When one of the three options is clicked, the players' choice is displayed on th
 ![fightarea](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/fightarea.PNG?raw=true)
 
 ## Result 
-The result section comprises a textbox with a short text that indicates, depending on the choices of player and computer, whether the player wins or loses or if it is a draw. 
-![result]()
+The result section comprises a textbox with a short text that indicates, depending on the choices of player and computer, whether the player wins or loses or if it is a draw. The default text instructs the player to choose one of the options above for playing.
+![result](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/result.PNG?raw=true)
 
 ## Score section
 As the name says, the score section displays the scores of the player and computer. The score counter of the respective side increments by one point when the player or computer wins. The scores change colors to green or red to mark the leading score.
-![win]()
+![win](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/win.PNG?raw=true)
 When the players' score equals to the score of the computer, the scores are displayed in yellow, marking a draw.
-![draw]()
+![draw](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/draw.PNG?raw=true)
 In between the players' and computers' score is a reset button located for setting the scores back to 0 and to start a new game. By clicking the button, a pop-up shows up, asking the players' confirmation, if he/she really wants to reset the game.
-![resetconfirm]()
+![resetconfirm](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resetconfirm.PNG?raw=true)
 By clicking 'Ok', the scores are reset to 0 and the 'fight area' will be cleared off the previous chosen options by player and computer.
-![resetok]()
+![resetok](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resetok.PNG?raw=true)
 
 ## Footer
 In the footer section the rules of the game are illustrated by using the images of the option icons depicting 'Rock', 'Paper' and 'Scissors'. The player is instructed that 'Rock' beats 'Scissors', 'Scissors' beat 'Paper' and 'Paper' beats 'Rock'.
