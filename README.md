@@ -38,7 +38,7 @@ Here are the wireframes, including both the desktop and mobile view:
 The website is divided into 6 core sections:
 * Header section with the title of the website
 * A section where the player picks his/her choice between Rock, Paper and Scissors
-* The 'fight' section, where the players' and computers' choice are displayed
+* The 'fight' area, where the players' and computers' choice are displayed
 * The result section that states who has won the round or if it is a draw
 * The score section, where the players' and computers' score are shown, including a reset button to reset the score and start a new game
 * The footer section, where the rules of the game are illustrated
@@ -54,5 +54,23 @@ Under the title, visitors of the website will find three clickable images illust
 ![playerchoice](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/choiceicons.PNG?raw=true)
 
 ## 'Fight' Area
-When one of the three options is clicked, the players' choice is displayed on the left side of the 'fight' area and the computer picks a random choice that is displayed on the right side. To make it more clear whose choice is whose, the short texts 'Player' and 'Computer' are located over the respective choice icons. In between the players' and computers' choice, there is a 'vs' icon in the middle, the short version of the latin word 'versus', which means 'against', to give the game a feel of a fight that the player has against the computer. In the screenshot below, the players' choice is rock, whereas the computer's choice is scissors.
+When one of the three options is clicked, the players' choice is displayed on the left side of the 'fight' area and the computer picks a random choice that is displayed on the right side. Over the 'fight area' there are the short texts 'Player' and 'Computer', indicating whose choice is whose. In between the players' and computers' choice, there is a 'vs' icon in the middle, the short version of the latin word 'versus', which means 'against', to give the game a feel of a fight that the player has against the computer. In the screenshot below, the players' choice is rock, whereas the computer's choice is scissors.
 ![fightarea](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/fightarea.PNG?raw=true)
+
+## Result 
+The result section comprises a textbox with a short text that indicates, depending on the choices of player and computer, whether the player wins or loses or if it is a draw. 
+![result]()
+
+## Score section
+As the name says, the score section displays the scores of the player and computer. The score counter of the respective side increments by one point when the player or computer wins. The scores change colors to green or red to mark the leading score.
+![win]()
+When the players' score equals to the score of the computer, the scores are displayed in yellow, marking a draw.
+![draw]()
+In between the players' and computers' score is a reset button located for setting the scores back to 0 and to start a new game. By clicking the button, a pop-up shows up, asking the players' confirmation, if he/she really wants to reset the game.
+![resetconfirm]()
+By clicking 'Ok', the scores are reset to 0 and the 'fight area' will be cleared off the previous chosen options by player and computer.
+![resetok]()
+
+## Footer
+In the footer section the rules of the game are illustrated by using the images of the option icons depicting 'Rock', 'Paper' and 'Scissors'. The player is instructed that 'Rock' beats 'Scissors', 'Scissors' beat 'Paper' and 'Paper' beats 'Rock'.
+![rules]()
