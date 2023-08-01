@@ -13,6 +13,7 @@ The mockup image has been generated on https://ui.dev/amiresponsive.
 * As a user, I want to find interactive elements for playing the game, like buttons, in a short time.
 * As a user, I want to find a clean layout, so I can find my score and the score of the computer in a short time and view them while playing the game.
 * As a user, I want to be able to reset my and the computers' score and start a new game. 
+* As a user, I want to be able to access the website from different devices like PC, mobile devices and tablets.  
 
 # Design
 ## Colors
@@ -72,13 +73,14 @@ As the name says, the score section displays the scores of the player and comput
 ![win](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/win.PNG?raw=true)
 
 When the players' score equals to the score of the computer, the scores are displayed in yellow, marking a draw.
+
 ![draw](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/draw.PNG?raw=true)
 
-In between the players' and computers' score is a reset button located for setting the scores back to 0 and to start a new game. By clicking the button, a pop-up shows up, asking the players' confirmation, if he/she really wants to reset the game.
+In between the players' and computers' score is a reset button located for setting the scores back to 0 and to start a new game. By clicking the button, a confirmation dialog box shows up, asking the players' confirmation, if he/she really wants to reset the game.
 
 ![resetconfirm](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resetconfirm.PNG?raw=true)
 
-By clicking 'Ok', the scores are reset to 0 and the 'fight area' will be cleared off the previous chosen options by player and computer.
+By clicking 'Ok', the scores are reset to 0 and the 'fight area' will be cleared off the previous chosen options by player and computer. By clicking 'Cancel', the score stays the same just like before clicking the reset button.
 
 ![resetok](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resetok.PNG?raw=true)
 
@@ -108,3 +110,43 @@ The code of my website has been tested with following validators:
 * W3C Validator test passed with no errors. [Test here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fherfri.github.io%2Frock-paper-scissors%2F)
 * Jigsaw Validator test passed with no errors. [Test here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fherfri.github.io%2Frock-paper-scissors%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=de)
 * Jshint linter showed no errors. 
+
+## Performance Test
+To test the performance of the website the Google Lighthouse test was used and showed very good results:
+![lighthouseresult]()
+
+## Responsiveness
+To test responsiveness, I used the website [AmIresponsive](https://ui.dev/amiresponsive?url=https://herfri.github.io/rock-paper-scissors/) that generated the [mockup image]().
+Moreover, I used Chrome (Version 115.0.5790.110) Developer Tools to simulate viewports of different devices, which showed that my website was fully responsive:
+
+![galaxyfold]()
+
+![iphone]()
+
+![ipad]()
+
+## Browser Testing
+I checked the layout and appearance of my website for consistency on different browsers.
+
+Tested browsers: Chrome, Firefox, Safari, Edge
+
+Result: Layout and all functions work throughout the tested browsers.
+
+## Manual Testing
+| Feature         | Expect                                                          | Action                    | Result                                          |   
+|-----------------|-----------------------------------------------------------------|---------------------------|-------------------------------------------------|
+| Clickable Images of 'Rock','Paper' and 'Scissors'| When clicked, the respective image is displayed in the 'fight' area, the computers' choice is displayed in the 'fight' area, the result-text, whether it is a win, lose or draw, is displayed in the result textbox, the score increments or stays the same, changes color to green/red/yellow, depending if player wins, loses or it is a draw    | Clicked on each of the clickable images | Image is displayed in the 'fight' area, computers' choice is displayed in the 'fight' area, result-text is displayed in the result textbox, score increments or stays the same and changes color depending if it is a win, lose or a draw.|   |
+| Reset Button | When clicked, a confirmation dialog box is displayed, asking the player if he/she really wants to reset the game  | Clicked on Reset Button    | Confirmation dialog box is displayed, asking the player if he/she really wants to reset the game |   |
+| 'Ok' button of confirmation dialog box | When clicked, the scores reset to 0 and the 'fight area' will be cleared off the previous chosen options by player and computer.               | Clicked 'Ok' button | Scores are reset to 0, 'fight area' is cleared off the previous chosen options by player and computer.                            |
+| 'Cancel' button of confirmation dialog box     | When clicked, the scores stay the same just like before clicking the reset button                                                        | Clicked 'Cancel' button                                          | Scores stay the same just like before clicking the reset button                  |
+| 
+
+## Testing User Stories
+| Expectation                                                                                                                                          | Result                                                                                                                                                                                                                                                                           |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| As a user who never played the game before, I want to learn the rules of the game by easily understandable instructions.                             | As a user, I can find the rules of the game easily under the actual game in the footer section. The rules are explained in a very easily understandable manner, as the options to choose from and their capabilites are illustrated.                                             |
+| As a user, I want to find interactive elements for playing the game, like buttons, in a short time.                                                  | As a user, I find an instructional text in the result section that informs me where to find the interactive elemtns to play the game, so I can find them very easily and in a short time. The label of the reset button helps me to comprehend its purpose in a very short time. |
+| As a user, I want to find a clean layout, so I can find my score and the score of the computer in a short time and view them while playing the game. | As a user, I find a clean layout that enables me to find my and the computers' score very fast and I can view them while playing the game.  
+| As a user, I want to be able to reset my and the computers' score and start a new game. | As a user, I can reset my and the computers' score and start a new game by clicking the reset button.                            |
+| As a user, I want to be able to access the website from different devices like PC, mobile devices and tablets.                                                                    | As a user, thanks to the responsive design of the website, I am able to access the website with different devices, such as PC, mobile devices and tablets.     |
+                                                                                                                                                          
