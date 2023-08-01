@@ -107,14 +107,14 @@ function resetChoices() {
 
 function reset() {
     if (confirm("Do you really want to reset the game?")) {
-    resetChoices();
-    compScore = 0;
-    yourScore = 0;
-    yourScoreBoard.innerText = 0;
-    compScoreBoard.innerText = 0;
-    yourScoreBoard.style.color = "#000000";
-    compScoreBoard.style.color = "#000000";
-    winner.innerText = "Click on Rock, Paper, or Scissors above!";
+        resetChoices();
+        compScore = 0;
+        yourScore = 0;
+        yourScoreBoard.innerText = 0;
+        compScoreBoard.innerText = 0;
+        yourScoreBoard.style.color = "#000000";
+        compScoreBoard.style.color = "#000000";
+        winner.innerText = "Click on Rock, Paper, or Scissors above!";
     }
 }
 
