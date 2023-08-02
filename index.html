@@ -8,10 +8,12 @@
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
+    <!-- this is the header -->
     <header>
         <p class="textcenter announce bold">Compete against the Computer in <br>
             Rock, Paper, Scissors!</p>
     </header>
+    <!-- this is the section with the player choices, including clickable images-->
     <section>
     <div class="imagecontainer">
         <input type ="image" class="images" id="rock" src="assets/images/rock.png" alt="clickable rock image">
@@ -19,6 +21,7 @@
         <input type ="image" class="images" id="scissors" src="assets/images/scissors.png" alt="clickable scissors image">
     </div>
     </section>
+    <!-- this is the 'fight' area, where the player's and computer's choices are displayed -->
     <section>
     <div class="flex">
         <p class="announce" id="player">Player</p>
@@ -52,11 +55,13 @@
         </div>
     </div>
     </section>
+    <!-- this is the result section where the result of both competing choices is displayed -->
     <section>
     <div class="result">
         <p id="winner">Click on Rock, Paper or Scissors above!</p>
     </div>
     </section>
+    <!-- this is the score section where the player's and computer's scores are displayed -->
     <section>
     <div class="flex">
         <div class="score">
@@ -70,10 +75,10 @@
         </div>
     </div>
     </section>
+    <!-- this is the footer including the rules of the game -->
     <footer>
         <div class="rules textcenter">
             <span>Rules: <br><img src="assets/images/rock.png" class="imgFoot" alt="rock image">beats <img src="assets/images/scissors.png" class="imgFoot" alt="scissors image">beats <img src="assets/images/paper.png" class="imgFoot" alt="paper image">beats<img src="assets/images/rock.png" class="imgFoot" alt="rock image"></span>
-        <!--    <p class="rules textcenter">Rules: Rock beats Scissors. Paper beats Rock. Scissors beat Paper.</p> -->
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
