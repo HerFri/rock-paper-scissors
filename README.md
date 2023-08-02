@@ -80,7 +80,7 @@ In between the player's and computer's score is a reset button located for setti
 
 ![resetconfirm](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resetconfirm.PNG?raw=true)
 
-By clicking 'Ok', the scores are reset to 0 and the 'fight area' will be cleared off the previous chosen options by player and computer. By clicking 'Cancel', the score stays the same just like before clicking the reset button.
+By clicking 'Ok', the scores are reset to 0 and the 'fight area' will be cleared off the previously chosen options by player and computer. Moreover, the scores of 0 will be displayed in the default color black and the default sentence 'Click on Rock, Paper or Scissors' will be displayed in the resultbox.  By clicking 'Cancel', the score stays the same just like before clicking the reset button.
 
 ![resetok](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resetok.PNG?raw=true)
 

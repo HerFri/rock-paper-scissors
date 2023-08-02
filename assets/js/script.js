@@ -163,7 +163,7 @@ function reset() {
         compScoreBoard.innerText = 0;
         yourScoreBoard.style.color = "#000000";
         compScoreBoard.style.color = "#000000";
-        winner.innerText = "Click on Rock, Paper, or Scissors above!";
+        winner.innerText = "Click on Rock, Paper or Scissors above!";
     }
 }
 
