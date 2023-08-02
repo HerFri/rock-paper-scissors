@@ -187,6 +187,7 @@ To run the project locally, two options are possible:
 
 ## Media
 Images:
+
 [Rock, Paper, Scissors Icons](https://www.seekpng.com/ipng/u2q8u2a9a9o0r5a9_rock-paper-scissors-rock-paper-scissors-png/)
 
 [VS Icon](https://de.depositphotos.com/89636676/stock-illustration-symbol-competition-vs-vector-illustration.html)
