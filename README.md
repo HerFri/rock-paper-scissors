@@ -135,13 +135,10 @@ Result: Layout and all functions work throughout the tested browsers.
 ## Manual Testing
 | Feature                                           | Expectation                                                                                                                                                                                                                                                                                                                                     | Action                                  | Result                                                                                                                                                                                                                                     | Screenshot           |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| Clickable Images of 'Rock', 'Paper' and 'Scissors' | When clicked, the respective image is displayed in the 'fight' area, the computers' choice is displayed in the 'fight' area, the result-text, whether it is a win, lose or draw, is displayed in the result textbox, the score increments or stays the same, changes color to green/red/yellow, depending if player wins, loses or it is a draw | Clicked on each of the clickable images | Image is displayed in the 'fight' area, computers' choice is displayed in the 'fight' area, result-text is displayed in the result textbox, score increments or stays the same and changes color depending if it is a win, lose or a draw. | [View here]()       |
-| Reset Button                                      | When clicked, a confirmation dialog box is displayed, asking the player if he/she really wants to reset the game                                                                                                                                                                                                                                | Clicked on Reset Button                 | Confirmation dialog box is displayed, asking the player if he/she really wants to reset the game                                                                                                                                           | [View here]() |
-| 'Ok' button of confirmation dialog box            | When clicked, the scores reset to 0 and the 'fight area' will be cleared off the previous chosen options by player and computer.                                                                                                                                                                                                                | Clicked 'Ok' button                     | Scores are reset to 0, 'fight area' is cleared off the previous chosen options by player and computer.                                                                                                                                     | [View here]()        |
-| 'Cancel' button of confirmation dialog box | When clicked, the scores stay the same just like before clicking the reset button | Clicked 'Cancel' button | Scores stay the same just like before clicking the reset button | [View here]() |
-
-
-
+| Clickable Images of 'Rock', 'Paper' and 'Scissors' | When clicked, the respective image is displayed in the 'fight' area, the computers' choice is displayed in the 'fight' area, the result-text, whether it is a win, lose or draw, is displayed in the result textbox, the score increments or stays the same, changes color to green/red/yellow, depending if player wins, loses or it is a draw | Clicked on each of the clickable images | Image is displayed in the 'fight' area, computers' choice is displayed in the 'fight' area, result-text is displayed in the result textbox, score increments or stays the same and changes color depending if it is a win, lose or a draw. | [View here](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/playerchoice.PNG?raw=true)       |
+| Reset Button                                      | When clicked, a confirmation dialog box is displayed, asking the player if he/she really wants to reset the game                                                                                                                                                                                                                                | Clicked on Reset Button                 | Confirmation dialog box is displayed, asking the player if he/she really wants to reset the game                                                                                                                                           | [View here](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resetconfirm.PNG?raw=true) |
+| 'Ok' button of confirmation dialog box            | When clicked, the scores reset to 0 and the 'fight area' will be cleared off the previous chosen options by player and computer.                                                                                                                                                                                                                | Clicked 'Ok' button                     | Scores are reset to 0, 'fight area' is cleared off the previous chosen options by player and computer.                                                                                                                                     | [View here](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/okbuttonclick.PNG?raw=true)        |
+| 'Cancel' button of confirmation dialog box | When clicked, the scores stay the same just like before clicking the reset button | Clicked 'Cancel' button | Scores stay the same just like before clicking the reset button | [View here](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/cancelbuttonclick.PNG?raw=true) |
 
 ## Testing User Stories
 | Expectation                                                                                                                                          | Result                                                                                                                                                                                                                                                                           |
@@ -151,4 +148,52 @@ Result: Layout and all functions work throughout the tested browsers.
 | As a user, I want to find a clean layout, so I can find my score and the score of the computer in a short time and view them while playing the game. | As a user, I find a clean layout that enables me to find my and the computers' score very fast and I can view them while playing the game.  
 | As a user, I want to be able to reset my and the computers' score and start a new game. | As a user, I can reset my and the computers' score and start a new game by clicking the reset button.                            |
 | As a user, I want to be able to access the website from different devices like PC, mobile devices and tablets.                                                                    | As a user, thanks to the responsive design of the website, I am able to access the website with different devices, such as PC, mobile devices and tablets.     |
-                                                                                                                                                          
+
+## Fixed Bugs
+
+When users clicked the reset button followed by clicking on the cancel button of the confirmation dialog box, the score would reset anyway and the reset button would not serve its intended purpose.
+
+To fix this, I added an `if`-condition to the function `reset`, to execute the function that resets the score only if this condition holds true:
+
+`function reset() {
+    if (confirm("Do you really want to reset the game?")) {
+        resetChoices();
+        compScore = 0;
+        yourScore = 0;
+        yourScoreBoard.innerText = 0;
+        compScoreBoard.innerText = 0;
+        yourScoreBoard.style.color = "#000000";
+        compScoreBoard.style.color = "#000000";
+        winner.innerText = "Click on Rock, Paper, or Scissors above!";
+    }
+}`
+
+# Deployment
+
+This website was deployed via GitHub pages. The steps to do that are as follows:
+1. Go to the GitHub repository and click on 'Settings'.
+2. On the left side click on 'Pages'.
+3. In the 'Build and deployment' section find 'Source', click the dropdown menu and click 'Deploy from a branch'.
+4. Change to main branch.
+5. After saving, the website should go live after some minutes. From now on, after every `git push`, the undertaken changes will apply to your website.
+
+The link to the live site is: https://herfri.github.io/rock-paper-scissors/
+
+To run the project locally, two options are possible:
+1. In the GitHub repository, click the button 'Code', copy the HTTPS adress (https://github.com/HerFri/rock-paper-scissors.git) and use `git clone` followed by the HTTPS adress in your IDE.
+2. Or: Go to the GitHub repository, click the button 'Code', click 'Download ZIP'. Once downloaded, extract the Zip file and open the files in your local IDE.
+
+# Credits
+
+## Media
+Images:
+[Rock, Paper, Scissors](https://www.seekpng.com/ipng/u2q8u2a9a9o0r5a9_rock-paper-scissors-rock-paper-scissors-png/)
+[VS](https://de.depositphotos.com/89636676/stock-illustration-symbol-competition-vs-vector-illustration.html)
+
+All media was used for educational purposes only.
+
+## Code
+[Display image on button click](https://codepen.io/Orajiaku/pen/NLomxZ)
+
+# Acknowledgements
+I want to thank my mentor and the tutors of Code Institute for their helpful advice and feedback during the work on this project!
