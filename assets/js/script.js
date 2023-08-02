@@ -8,6 +8,9 @@ let compScoreBoard = document.getElementById("compPoints");
 let winner = document.getElementById("winner");
 let items = document.getElementsByClassName("divchoices");
 
+/**
+ * Initializes game
+ */
 function initializeGame() {
     document.getElementById("rock").addEventListener("click", function() {
         displaySelection("second", "third", "first");
@@ -29,13 +32,27 @@ function initializeGame() {
     });
 }
 
+/* Display images on button click source: https://codepen.io/Orajiaku/pen/NLomxZ */
+
+/**
+ * Displays the icon of the selected choice of player or computer
+ */
 function displaySelection(hideElementOne, hideElementTwo, displayElement) {
     document.getElementById(hideElementOne).style.display ='none';
     document.getElementById(hideElementTwo).style.display ='none';
     document.getElementById(displayElement).style.display ='block';
    }
 
-function pickNumberRock() {
+
+/**
+ * Computer picks a random number from 1 - 3,
+ * Displays icon of the selected choice depending on the picked number,
+ * Checks if player or computer wins when player chose rock,
+ * Displays the result of the 'fight',
+ * Increments score of the winner
+ *
+ */
+   function pickNumberRock() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
     if (choiceNumber === 1) {
         displaySelection("fifth", "sixth", "fourth");            
@@ -53,7 +70,15 @@ function pickNumberRock() {
     }
     pointColor(); 
 }
-        
+
+/**
+ * Computer picks a random number from 1 - 3,
+ * Displays icon depending on the picked number,
+ * Checks if player or computer wins when player chose paper,
+ * Displays the result of the 'fight',
+ * Increments score of the winner
+ *
+ */
 function pickNumberPaper() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
     if (choiceNumber === 1) {
@@ -73,6 +98,14 @@ function pickNumberPaper() {
     pointColor();
 }
 
+/**
+ * Computer picks a random number from 1 - 3,
+ * Displays icon depending on the picked number,
+ * Checks if player or computer wins when player chose scissors,
+ * Displays the result of the 'fight',
+ * Increments score of the winner
+ *
+ */
 function pickNumberScissors() {
     let choiceNumber = Math.floor(Math.random() * 3) +1;
     if (choiceNumber === 1) {
@@ -92,6 +125,9 @@ function pickNumberScissors() {
     pointColor();
 }
 
+/**
+ * Changes color of the score depending on who is winning or if it is a draw
+ */
 function pointColor() {
     if (yourScore > compScore) {
         yourScoreBoard.style.color = "#008000";
@@ -105,12 +141,19 @@ function pointColor() {
     }
 }
 
+/**
+ * Clears off the 'fight'-area of any displayed icons chosen by player and computer
+ */
 function resetChoices() {
     for (let item of items) {
         item.style.display = "none";
     }   
 }
 
+/**
+ * Pop ups a dialog confirmation box, 
+ * resets score to 0, changes colors of score and text of the resultbox to default when 'Ok' is clicked
+ */
 function reset() {
     if (confirm("Do you really want to reset the game?")) {
         resetChoices();
@@ -124,4 +167,4 @@ function reset() {
     }
 }
 
-  addEventListener("DOMContentLoaded", initializeGame);
+addEventListener("DOMContentLoaded", initializeGame);
