@@ -11,10 +11,6 @@ footer {
     font-size: 10px;
 }
 
-.heading {
-    font-size: 5vw;
-}
-
 .textcenter {
     text-align: center;
 }
@@ -27,6 +23,12 @@ footer {
 .flex {
     display: flex;
     justify-content: space-between;
+}
+
+/* css rules for header */
+
+.announce {
+    font-size: 12px;
 }
 
 /* css rules for player choice images */
@@ -142,6 +144,7 @@ footer {
 /* media query for devices with minimum width: 375px */
 
 @media only screen and (min-width: 375px) {
+
     .imgFoot {
         width: 50px;
     }
