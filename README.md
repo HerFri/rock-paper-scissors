@@ -12,12 +12,12 @@ The mockup image has been generated on https://ui.dev/amiresponsive.
 * As a user who never played the game before, I want to learn the rules of the game by easily understandable instructions.
 * As a user, I want to find interactive elements for playing the game, like buttons, in a short time.
 * As a user, I want to find a clean layout, so I can find my score and the score of the computer in a short time and view them while playing the game.
-* As a user, I want to be able to reset my and the computers' score and start a new game. 
+* As a user, I want to be able to reset my and the computer's score and start a new game. 
 * As a user, I want to be able to access the website from different devices like PC, mobile devices and tablets.  
 
 # Design
 ## Colors
-In terms of colors I chose a basic color scheme, as the focus of the website is the game itself. The primary colors are black (#000000) and white (#FFFFFF). White is the background of the website and black is used for the texts, icons and borders of the respective areas like result area and score area. To highlight the scores and to mark who is leading in the game, the score of the leading player is highlighted in green (#008000), while the losing score is highlighted in red (#ff0000). When the players' score equals the computers' score, both scores are highlighted in yellow (#fcba03).
+In terms of colors I chose a basic color scheme, as the focus of the website is the game itself. The primary colors are black (#000000) and white (#FFFFFF). White is the background of the website and black is used for the texts, icons and borders of the respective areas like result area and score area. To highlight the scores and to mark who is leading in the game, the score of the leading player is highlighted in green (#008000), while the losing score is highlighted in red (#ff0000). When the player's score equals the computer's score, both scores are highlighted in yellow (#fcba03).
 
 ![colorpalette](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/colorpalette.png?raw=true)
 
@@ -39,14 +39,14 @@ Here are the wireframes, including both the desktop and mobile view:
 The website is divided into 6 core sections:
 * Header section with the title of the website
 * A section where the player picks his/her choice between Rock, Paper and Scissors
-* The 'fight' area, where the players' and computers' choice are displayed
+* The 'fight' area, where the player's and computer's choice are displayed
 * The result section that states who has won the round or if it is a draw
-* The score section, where the players' and computers' score are shown, including a reset button to reset the score and start a new game
+* The score section, where the player's and computer's score are shown, including a reset button to reset the score and start a new game
 * The footer section, where the rules of the game are illustrated
 
 # Features
 ## Header with Title
-In the header section of the website is the title of the website, encouraging visitors of the website to play against the computer.
+The header of the website comprises the title of the website, encouraging visitors of the website to play against the computer.
 
 ![header](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/header.PNG?raw=true)
 
@@ -55,7 +55,7 @@ Under the title, visitors of the website will find three clickable images illust
 ![playerchoice](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/choiceicons.PNG?raw=true)
 
 ## 'Fight' Area
-When one of the three options is clicked, the players' choice is displayed on the left side of the 'fight' area and the computer picks a random choice that is displayed on the right side. Over the 'fight area' there are the short texts 'Player' and 'Computer', indicating whose choice is whose. In between the players' and computers' choice, there is a 'vs' icon in the middle, the short version of the latin word 'versus', which means 'against', to give the game a feel of a fight that the player has against the computer. In the screenshot below, the players' choice is rock, whereas the computer's choice is scissors.
+When one of the three options is clicked, the player's choice is displayed on the left side of the 'fight' area and the computer picks a random choice that is displayed on the right side. Over the 'fight area' there are the short texts 'Player' and 'Computer', indicating whose choice is whose. In between the player's and computer's choice, there is a 'vs' icon in the middle, the short version of the latin word 'versus', which means 'against', to give the game a feel of a fight that the player has against the computer. In the screenshot below, the player's choice is rock, whereas the computer's choice is scissors.
 
 ![fightarea](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/fightarea.PNG?raw=true)
 
@@ -72,11 +72,11 @@ As the name says, the score section displays the scores of the player and comput
 
 ![win](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/win.PNG?raw=true)
 
-When the players' score equals to the score of the computer, the scores are displayed in yellow, marking a draw.
+When the player's score equals to the score of the computer, the scores are displayed in yellow, marking a draw.
 
 ![draw](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/draw.PNG?raw=true)
 
-In between the players' and computers' score is a reset button located for setting the scores back to 0 and to start a new game. By clicking the button, a confirmation dialog box shows up, asking the players' confirmation, if he/she really wants to reset the game.
+In between the player's and computer's score is a reset button located for setting the scores back to 0 and to start a new game. By clicking the button, a confirmation dialog box shows up, asking the player's confirmation, if he/she really wants to reset the game.
 
 ![resetconfirm](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resetconfirm.PNG?raw=true)
 
@@ -135,7 +135,7 @@ Result: Layout and all functions work throughout the tested browsers.
 ## Manual Testing
 | Feature                                           | Expectation                                                                                                                                                                                                                                                                                                                                     | Action                                  | Result                                                                                                                                                                                                                                     | Screenshot           |
 |---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| Clickable Images of 'Rock', 'Paper' and 'Scissors' | When clicked, the respective image is displayed in the 'fight' area, the computers' choice is displayed in the 'fight' area, the result-text, whether it is a win, lose or draw, is displayed in the result textbox, the score increments or stays the same, changes color to green/red/yellow, depending if player wins, loses or it is a draw | Clicked on each of the clickable images | Image is displayed in the 'fight' area, computers' choice is displayed in the 'fight' area, result-text is displayed in the result textbox, score increments or stays the same and changes color depending if it is a win, lose or a draw. | [View here](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/playerchoice.PNG?raw=true)       |
+| Clickable Images of 'Rock', 'Paper' and 'Scissors' | When clicked, the respective image is displayed in the 'fight' area, the computer's choice is displayed in the 'fight' area, the result-text, whether it is a win, lose or draw, is displayed in the result textbox, the score increments or stays the same, changes color to green/red/yellow, depending if player wins, loses or it is a draw | Clicked on each of the clickable images | Image is displayed in the 'fight' area, computer's choice is displayed in the 'fight' area, result-text is displayed in the result textbox, score increments or stays the same and changes color depending if it is a win, lose or a draw. | [View here](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/playerchoice.PNG?raw=true)       |
 | Reset Button                                      | When clicked, a confirmation dialog box is displayed, asking the player if he/she really wants to reset the game                                                                                                                                                                                                                                | Clicked on Reset Button                 | Confirmation dialog box is displayed, asking the player if he/she really wants to reset the game                                                                                                                                           | [View here](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/resetconfirm.PNG?raw=true) |
 | 'Ok' button of confirmation dialog box            | When clicked, the scores reset to 0 and the 'fight area' will be cleared off the previous chosen options by player and computer.                                                                                                                                                                                                                | Clicked 'Ok' button                     | Scores are reset to 0, 'fight area' is cleared off the previous chosen options by player and computer.                                                                                                                                     | [View here](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/okbuttonclick.PNG?raw=true)        |
 | 'Cancel' button of confirmation dialog box | When clicked, the scores stay the same just like before clicking the reset button | Clicked 'Cancel' button | Scores stay the same just like before clicking the reset button | [View here](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/cancelbuttonclick.PNG?raw=true) |
@@ -145,8 +145,8 @@ Result: Layout and all functions work throughout the tested browsers.
 |------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | As a user who never played the game before, I want to learn the rules of the game by easily understandable instructions.                             | As a user, I can find the rules of the game easily under the actual game in the footer section. The rules are explained in a very easily understandable manner, as the options to choose from and their capabilites are illustrated.                                             |
 | As a user, I want to find interactive elements for playing the game, like buttons, in a short time.                                                  | As a user, I find an instructional text in the result section that informs me where to find the interactive elemtns to play the game, so I can find them very easily and in a short time. The label of the reset button helps me to comprehend its purpose in a very short time. |
-| As a user, I want to find a clean layout, so I can find my score and the score of the computer in a short time and view them while playing the game. | As a user, I find a clean layout that enables me to find my and the computers' score very fast and I can view them while playing the game.  
-| As a user, I want to be able to reset my and the computers' score and start a new game. | As a user, I can reset my and the computers' score and start a new game by clicking the reset button.                            |
+| As a user, I want to find a clean layout, so I can find my score and the score of the computer in a short time and view them while playing the game. | As a user, I find a clean layout that enables me to find my and the computer's score very fast and I can view them while playing the game.  
+| As a user, I want to be able to reset my and the computer's score and start a new game. | As a user, I can reset my and the computer's score and start a new game by clicking the reset button.                            |
 | As a user, I want to be able to access the website from different devices like PC, mobile devices and tablets.                                                                    | As a user, thanks to the responsive design of the website, I am able to access the website with different devices, such as PC, mobile devices and tablets.     |
 
 ## Fixed Bugs
