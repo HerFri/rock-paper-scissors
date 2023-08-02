@@ -1,7 +1,7 @@
 # Rock-Paper-Scissors
 Visit the live page [here](https://herfri.github.io/rock-paper-scissors/)
 
-Rock-Paper-Scissors is an interactive webbrowser game based on the classic hand game that is usually played for making a decision by two persons. On this website, players can compete against the computer, that randomly chooses between rock, paper and scissors. There is no limit for playing rounds, and the score can be reset by any given time. Have fun playing!
+Rock-Paper-Scissors is an interactive webbrowser game based on the classic hand game that is usually played for making a decision by two persons. On this website players can compete against the computer that randomly chooses between rock, paper and scissors. There is no limit for playing rounds and the score can be reset by any given time. Have fun playing!
 
 ![mockup](https://github.com/HerFri/rock-paper-scissors/blob/main/readmeimages/mockup.PNG?raw=true)
 
